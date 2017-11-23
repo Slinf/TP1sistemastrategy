@@ -1,5 +1,6 @@
 package fr.clement.tp1.tp1_sistema_strategy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         inscrit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent=new Intent(view.getContext(),CityActivity.class);
+                startActivity(intent);
             }
         });
     }
