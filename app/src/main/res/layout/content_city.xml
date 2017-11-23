@@ -83,14 +83,6 @@
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-            <android.support.v7.widget.AppCompatButton
-                android:id="@+id/btncancel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/orange"
-                android:text="Annuler"
-                android:layout_toLeftOf="@id/btnchoose"
-                android:textColor="@color/white" />
 
             <android.support.v7.widget.AppCompatButton
                 android:id="@+id/btnchoose"
@@ -99,8 +91,18 @@
                 android:layout_alignParentRight="true"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="Choisir"
+                android:textColor="@color/white" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btncancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btnchoose"
+                android:backgroundTint="@color/orange"
+                android:text="Annuler"
 
                 android:textColor="@color/white" />
+
+
         </RelativeLayout>
     </android.support.v7.widget.LinearLayoutCompat>
 
